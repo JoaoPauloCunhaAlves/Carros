@@ -1,0 +1,369 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #f0f0f0;
+    --accent-color: #e70000;
+    --secondary-color: #e70000;
+    --hover-color: #e70000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+video {
+    width: 100%;
+    height: 88vh;
+    object-fit: cover;
+}
+
+.sobreposicao{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.conteudohome {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.conteudohome h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.conteudohome p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    animation: fadeInUp 1s ease 0.2s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+.espaco{
+    width: 100%;
+    background: rgb(233,0,0);
+    background: linear-gradient(90deg, rgba(233,0,0,1) 0%, rgba(152,0,0,1) 100%);
+    height: 15px;
+}
+
+.conteudosobre {
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 50%;
+    padding: 0 20px;
+    background-color: #22222293;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 0, 0, 0.473);
+}
+
+.conteudosobre h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.conteudosobre p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    animation: fadeInUp 1s ease 0.2s;
+}
+
+.tabelinha {
+    background-color: #000000;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+}
+.foguin{
+    color: #ff0505;
+    text-align: center;
+}
+strong { 
+    color: #8B0000; 
+}
+b { 
+    color: #000000; 
+}
+.galeria-carros {
+    width: 100%;
+    border-collapse: collapse;
+}
+.galeria-carros td {
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.galeria-carros td:hover{
+    transform: scale(1.05);
+}
+
+.galeria-carros img {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    border: 4px solid #e70000;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: 2px solid #e70000;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.galeria-carros td:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+}
+
+section {
+    padding: 80px 0;
+}
+
+.marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.marca {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px 90px;
+    border-radius: 5px;
+    background-color: #000000;
+    border: 2px solid #e70000;
+    transition: 0.3s ease-out;
+}
+
+.marca a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.marca:hover{
+    transform: scale(1.05);
+}
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.container-sobre {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: rgb(233,0,0);
+    color: linear-gradient(90deg, rgba(233,0,0,1) 0%, rgba(182,0,0,1) 50%, rgba(78,0,0,1) 100%);
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+
+
+h2 {
+    color: #e70000;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+.centralizar{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.contact {
+    background-color: #000000;
+    width: 1000px;
+    border-radius: 90px;
+    padding: 2rem;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+.grupo {
+    margin-bottom: 10px;
+
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #e70000;
+}
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e70000;
+    border-radius: 4px;
+}
+button {
+    color: #f0f0f0;
+    background-color: #e70000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+button:hover {
+    opacity: 0.9;
+}
+
+
+.conteudos {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.conteudos img {
+    width: 100%;
+
+}
+.conteudos p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.redessociais {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeInUp 1s ease 0.4s;
+}
+
+.redessociais a {
+    color: #fff;
+    font-size: 50px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redessociais a:hover {
+    color: #e70000;
+    transform: translateY(-3px);
+}
+
+.sobre{
+    font-size: 90px;
+    text-align: center;
+}

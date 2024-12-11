@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Paulo | Desenvolvedor Web</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">LC</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#vendas">Nossos carros</a></li>
+                    <li><a href="#marcas">Marcas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="vidiozinho">
+        <video autoplay muted loop src="CSS/videoplayback.mp4"></video>
+        <div class="sobreposicao"></div>
+        <div class="conteudohome">
+            <h1>Luxury Cars</h1>
+            <p>Sempre sonhou em ter uma nave? Não passe mais vontade. <br>Escolha seu carro dos sonhos aqui!!</p>
+        </div>
+        <div class="espaco"></div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="conteudos">
+             <img src="CSS/carros.png" alt="">
+             <p class="conteudosobre">
+                Bem-vindo à Luxury Cars!
+                <br>
+                ______________________________________________________________________________
+                <br>
+                Somos apaixonados por veículos que combinam design sofisticado, tecnologia avançada e desempenho incomparável. Nosso objetivo é levar você a um universo onde elegância e potência se encontram, oferecendo informações detalhadas, análises e as últimas tendências sobre os carros mais luxuosos do mercado.
+             </p>
+        </div>
+    </section>
+
+    <div class="espaco"></div>
+
+    <section id="vendas">
+        <div class="container">
+            <h2>Alguns de nosso carros</h2>
+            <div class="tabelinha">
+                <h1 class="foguin"><i class="fa-solid fa-fire"></i></h1>
+                <table class="galeria-carros">
+                    <tr>
+                        <td><img src="CSS/PORSCHE.jpg" alt="Carro 1"><button class="card-button">Porsche GT3 RS</button></td>
+                        <td><img src="CSS/PAGANI.jpg" alt="Carro 2"><button class="card-button">Pagani Huayra</button></td>
+                        <td><img src="CSS/MCLAREN.jpg" alt="Carro 3"><button class="card-button">McLaren P1</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="CSS/LAMBORGHINI.jpg" alt="Carro 4"><button class="card-button">Lamborghini Huracan</button></td>
+                        <td><img src="CSS/GTR.jpg" alt="Carro 5"><button class="card-button">GTR R35</button></td>
+                        <td><img src="CSS/FERRARI.jpg" alt="Carro 6"><button class="card-button">Ferrari LaFerrari</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <div class="espaco"></div>
+
+    <section id="marcas">
+        <div class="container">
+            <h2>Marcas</h2>
+            <div class="marcas">
+                <span class="marca"><a href="https://www.ferrari.com/en-BR">Ferrari</a></span>
+                <span class="marca"><a href="https://www.mclaren.com/">McLaren</a></span>
+                <span class="marca"><a href="https://www.porsche.com/">Porsche</a></span>
+                <span class="marca"><a href="https://www.nissan.com.br">Nissan</a></span>
+                <span class="marca"><a href="https://www.toyota.com/">Toyota</a></span>
+                <span class="marca"><a href="https://www.alfaromeo.com/">Alfa Romeu</a></span>
+                <span class="marca"><a href="https://www.lamborghini.com/">Lamborghini</a></span>
+                <span class="marca"><a href="https://www.pagani.com/">Pagani</a></span>
+                <span class="marca"><a href="https://www.koenigsegg.com/">Koenigsegg</a></span>
+                <span class="marca"><a href="https://www.bmw.com/">BMW</a></span>
+                <span class="marca"><a href="https://www.rolls-roycemotorcars.com/">Rolls Royce</a></span>
+                <span class="marca"><a href="https://www.maserati.com/">Maserati</a></span>
+            </div>
+        </div>
+    </section>
+
+    <div class="espaco"></div>
+
+    <section id="contato">
+        <h2 data-aos="fade-right">Entre em Contato</h2>
+        <div class="centralizar">
+            <div class="contact">
+                <div class="grupo">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Seu nome">
+                </div>
+                <div class="grupo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seu@email.com">
+                </div>
+                <div class="grupo">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" rows="4" placeholder="Sua mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </div>
+        </div>
+        <div class="redessociais">
+            <a href="https://www.instagram.com/ojao.alves/?hl=pt-br"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/JoaoPauloCunhaAlves"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-cunha-alves-2383412b8/"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 João Paulo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
